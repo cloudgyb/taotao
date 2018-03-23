@@ -26,6 +26,11 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
+				<configuration>
+				<!-- 	<reload>automatic</reload> -->
+					<reload>manual</reload>
+					<scanIntervalSeconds>3</scanIntervalSeconds>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
